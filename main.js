@@ -1,15 +1,9 @@
-import { Octokit, App } from "https://cdn.skypack.dev/octokit";
 
-
-const octokit = new Octokit({ auth: `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` })
 async function repo(query, page = 1, perPage = 5) {
     if (query) {
-        const reps = await octokit.request('GET /search/repositories', {
-            q: `${query}`,
-            per_page: perPage,
-            page: page
-        })
-        return reps.data.items
+        const reps = (await fetch(`https://api.github.com/search/repositories?q=${query}&per_page=${perPage}&page=${page}`)).json()
+
+        return reps.then(val => val.items)
     }
     return []
 }
