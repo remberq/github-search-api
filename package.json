@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "name": "GitHubTask",
+  "version": "1.0.0",
+  "dependencies": {
+    "@octokit/core": "^3.6.0"
+  }
+}

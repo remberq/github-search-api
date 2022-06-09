@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #0d1117;
+}
+
+.container {
+    position: relative;
+    margin: 100px auto;
+    text-align: center;
+    width: 500px;
+}
+
+.github {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+
+}
+
+.input {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 500px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+.input::placeholder {
+    font-size: 15px;
+}
+
+.borders {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.autocomplete {
+    margin: 0 auto;
+    width: 500px;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+
+.auto__li {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 500px;
+    height: 40px;
+    outline: none;
+    border: none;
+    text-align: left;
+    box-shadow: 0 0 1px gray;
+    transition: background-color .5s, border-radius .5s;
+}
+
+.auto__li:hover {
+    cursor: pointer;
+    background-color: #dcd4d4;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.repo-data {
+    margin: 10px auto;
+    width: 500px;
+    height: 100%;
+
+}
+
+.repo-data__content {
+    position: relative;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: 1px solid gray;
+    text-align: left;
+    background-color: white;
+
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.btn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./close-svgrepo-com.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: red;
+
+}
